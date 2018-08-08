@@ -1,24 +1,21 @@
 {
-  "name": "Website",
+  "name": "coding-cougs-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Coding Cougs Website",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon ./bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon server/app.js",
+    "dev-server": "concurrently \"npm start --prefix client\" \"nodemon server/app.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "morgan": "^1.9.0",
-    "pg": "^7.4.3",
-    "pg-hstore": "^2.3.2",
-    "sequelize": "^4.38.0"
-  },
-  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "create-react-app": "^1.5.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
     "nodemon": "^1.18.3"
   }
 }

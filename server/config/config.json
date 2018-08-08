@@ -1,25 +1,23 @@
 {
   "development": {
     "username": "postgres",
-    "password": null,
-    "database": "tododev",
+    "password": "root", 
+    "database": "CC-Development",
     "host": "127.0.0.1",
-    "port": 5432,
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
-    "password": null,
-    "database": "todotest",
+    "password": "root",
+    "database": "CC-Test",
     "host": "127.0.0.1",
-    "port": 5432,
     "dialect": "postgres"
   },
   "production": {
     "username": "root",
     "password": null,
-    "database": "database_production",
+    "database": "CC-Production",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "postgres"
   }
 }
