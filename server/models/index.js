@@ -1,3 +1,5 @@
+'use strict'
+
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
@@ -14,6 +16,16 @@ if (config.use_env_variable) {
     config.database, config.username, config.password, config
   );
 }
+
+sequelize
+  .sync({froce:true})
+  .then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });
+
 
 fs
   .readdirSync(__dirname)
