@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import HomeScreen from './components/HomeScreen';
-import './App.css';
+import '../style/App.css';
+
+import UserList from '../containers/user-list';
 
 class App extends Component {
   render() {
     return (
-     <HomeScreen />
+      <div>
+        <UserList />
+      </div>
     );
   }
 }
