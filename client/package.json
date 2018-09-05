@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy":{
+  "proxy": {
     "/api/*": {
       "target": "http://localhost:5000"
     }
@@ -10,6 +10,7 @@
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-navigation": "^2.12.1",
     "react-scripts": "1.1.4"
   },
   "scripts": {
