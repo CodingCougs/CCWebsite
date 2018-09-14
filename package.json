@@ -4,6 +4,7 @@
   "description": "A Coding Cougs Website",
   "main": "index.js",
   "scripts": {
+    "start": "node server/index.js",
     "server": "nodemon server/app.js",
     "dev-server": "concurrently \"npm start --prefix client\" \"nodemon server/app.js\""
   },
