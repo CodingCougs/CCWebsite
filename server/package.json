@@ -8,7 +8,8 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,8 @@
     "dotenv": "^5.0.0",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0",
     "path": "^0.12.7",
     "pg": "^7.4.1",
     "querystring": "^0.2.0",
@@ -26,7 +29,7 @@
     "sequelize": "^4.38.0"
   },
   "devDependencies": {
-    "sequelize-cli": "^4.0.0",
-    "nodemon": "^1.14.11"
+    "nodemon": "^1.18.4",
+    "sequelize-cli": "^4.0.0"
   }
 }
